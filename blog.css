@@ -8,9 +8,9 @@ DESCRIPTION: This is project my blog project web design
 */
 
 :root{
-    --template-bg:black;
-    --template-color:white;
-    --parag-color:rgba(0, 0, 0, 0.7);
+    --template-bg:rgb(49, 49, 49);
+    --template-color:rgb(243, 218, 218);
+    --parag-color:rgba(241, 241, 241, 0.7);
 }
 
 /* ### COMMON PROPERTY ### */
@@ -28,6 +28,8 @@ body {
     position: relative;
     font-family: 'Wix Madefor Display', sans-serif;
     font-size:1.1rem; /*15*1.1px*/
+    background-color: var(--template-bg) ;
+    color:var(--template-color)
 }
 
 ul{

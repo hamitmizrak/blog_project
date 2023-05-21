@@ -42,14 +42,62 @@
     <link rel="stylesheet" href="blog.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+<body data-bs-spy="scroll" data-bs-target="#navbar_first">
     <!-- start codes -->
 
     <noscript>Bu web sitesi sizin browserınız tarafından desteklenmiyor</noscript>
 
-    <!-- navbar start -->
-    <navbar id="navbar_id"></navbar>
-    <!-- navbar end -->
+    <!-- navbar first start -->
+    <!-- div.top_bar>div.container>div.row>(div.col-lg-7.col-md-9.col-xs-12>ul.clearfix.links>(li>i)*3)+(div.col-lg.col-md>div.first_right>a{Login}+a{Register}))
+    -->
+    <navbar id="navbar_first" >
+        <div class="top_bar bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-9 col-xs-12">
+                        <div class="first_left ">
+                            <ul class="clearfix links clearfix">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-solid fa-blog"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md ">
+                        <div class="first_right my_clearFix">
+                            <a href=""><i class="fa-solid fa-user-check"></i></a>
+                            <a href=""><i class="fa-solid fa-user-lock"></i></a>
+                        </div>
+                    </div>
+                </div><!-- end row-->
+            </div> <!-- end container-->
+        </div><!-- end top_bar-->
+    </navbar>
+    <!-- navbar first  end -->
+
+
+    <!-- navbar second start -->
+    <navbar id="navbar_second" class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">LOGO</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarID">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </navbar>
+    <!-- navbar second  end -->
 
     <!-- header start -->
     <header id="header_id"></header>
@@ -58,16 +106,7 @@
 
     <!-- main start -->
     <main id="main_id">
-        <section id="test">
-            <p class="text-primary44 line_clamp4"> <i class="fa fa-address-book" aria-hidden="true"></i> Lorem ipsum dolor sit amet
-                Lorem ipsum dolor sit amet consectetur adipisicing elitid aliquam voluptatibus.</p>
-       <a href="">test</a>
-       <ul>
-        <li>item 1 </li>
-        <li>item 2 </li>
-       </ul>
-       <img src="./img/background-gc9028b89f_1920.jpg" alt="" srcset="">
-            </section>
+        <p>lorem*40</p>
     </main>
     <!-- main end -->
 

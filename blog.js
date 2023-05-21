@@ -6,14 +6,30 @@ DATE: 21/05/2023
 VERSION: v.1
 */
 
-darkMode=()=>{
-    let darkButton=document.body.classList.toggle("dark_mode_classlist")
+/* DARK MODE */
+darkMode = () => {
+    let darkButton = document.body.classList.toggle("dark_mode_classlist")
 }
 
-$(function() {
-    const searchData=["Adana","Balikesir","Ceyhan","Diyarbakır","Elazığ","Malatya"];
+/* SEARCH */
+$(function () {
+    const searchData = ["Adana", "Balikesir", "Ceyhan", "Diyarbakır", "Elazığ", "Malatya"];
     $("#tags").autocomplete({
-        source:searchData
+        source: searchData
     });
-    }
-);
+});
+
+/* BACK TOP */
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 90) {
+            $("#back_top").fadeIn('slow');
+        }else{
+            $("#back_top").fadeOut('slow');
+        }
+    });
+    $("#back_top").click(function(){
+        $("html, body").animate({scrollTop:0},90,'easeInOutExpo');
+        return false;
+    })
+});

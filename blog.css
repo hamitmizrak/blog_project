@@ -10,8 +10,9 @@ DESCRIPTION: This is project my blog project web design
 :root {
     --template-bg: rgb(49, 49, 49);
     --template-color: rgb(243, 218, 218);
-    --parag-color: rgba(241, 241, 241, 0.7);
+    --parag-color: rgba(51, 49, 49, 0.7);
     --navbar-first-bg: rgba(0, 0, 0, .4);
+    --label-color:rgba(0, 0, 0, .9);
 
 }
 
@@ -42,6 +43,9 @@ ul {
 
 a {
     text-decoration: none;
+}
+label{
+    color:var(--label-color);
 }
 
 i {

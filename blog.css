@@ -121,7 +121,7 @@ img:hover {
 /* ### NAVBAR  ### */
 #navbar_first {
     max-width: 100% !important;
-    max-height: 2rem;
+    max-height: 1rem;
 }
 
 #navbar_first .top_bar {
@@ -129,9 +129,8 @@ img:hover {
     background-color: var(--navbar-first-bg) !important;
     color: white;
     padding-top: 0.8rem;
-
-    position:sticky;
-    top: 10;
+    position: sticky;
+    top: 5;
 }
 
 .first_left {
@@ -142,10 +141,21 @@ img:hover {
     float: right;
 }
 
-#navbar_second{
+#navbar_second {
     max-width: 100% !important;
-    max-height: 4rem;
+    max-height: 8rem;
     padding-top: 0.8rem;
-    position:fixed;
+    position: sticky;
     top: 0;
+    opacity: .8 !important;
+}
+
+#logo {
+    width: 5rem;
+    border-radius: 50% 50%;
+}
+
+#logo:hover {
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, .9);
+    transition: 2s all;
 }

@@ -9,3 +9,11 @@ VERSION: v.1
 darkMode=()=>{
     let darkButton=document.body.classList.toggle("dark_mode_classlist")
 }
+
+$(function() {
+    const searchData=["Adana","Balikesir","Ceyhan","Diyarbakır","Elazığ","Malatya"];
+    $("#tags").autocomplete({
+        source:searchData
+    });
+    }
+);
